@@ -1,0 +1,136 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&family=Varela+Round&display=swap');
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the styles for the navigation bar */
+.navbar {
+    background-color: #fdfbfb; /* Background color of the navbar */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font for the links */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 960px; /* Limit the width of the container */
+    margin-left: auto; /* Center the container horizontally */
+    padding: 10px 20px; /* Add some padding inside the container */
+}
+
+.navbar-links {
+    display: flex; /* Display the links horizontally */
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Add spacing between links */
+}
+
+.navbar-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color for links */
+    font-family: Poppins;
+    font-weight: 600;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-image: url(images/background.jpg);
+    background-repeat: no repeat;
+    background-size:cover;
+    color: #fff;
+    padding: 10px;
+}
+header a{
+    padding: 10px;
+    color:#fff;
+}
+h1 {
+    margin-bottom: 5px;
+}
+
+#contact, #education, #experience, #skills {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#contact ul, #education p, #experience article, #skills ul {
+    list-style: none;
+}
+
+#contact ul li::before, #skills ul li::before {
+    content: "\2022";
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image is clipped within the circular shape */
+    margin: 0 auto 10px; /* Center the profile picture and add some bottom margin */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire circle without stretching */
+}
+@media (max-width: 480px) {
+    /* Adjust container width and margins for smaller screens */
+    .navbar-links {
+        flex-direction: column; /* Stack the links vertically */
+        align-items: flex-start; /* Align links to the left */
+    }
+
+    .navbar-link {
+        margin: 5px 0; /* Add spacing between stacked links */
+    }
+    .curved-container {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    /* Adjust font size for better readability on smaller screens */
+    .navbar-link {
+        font-size: 16px; /* Adjust font size as needed */
+    }
+}
