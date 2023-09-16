@@ -1,0 +1,186 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&family=Varela+Round&display=swap');
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the styles for the navigation bar */
+.navbar {
+    background-color: #fdfbfb; /* Background color of the navbar */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font for the links */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 960px; /* Limit the width of the container */
+    margin-left: auto; /* Center the container horizontally */
+    padding: 10px 20px; /* Add some padding inside the container */
+}
+
+.navbar-links {
+    display: flex; /* Display the links horizontally */
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Add spacing between links */
+}
+
+.navbar-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color for links */
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+/* Media query for responsiveness */
+
+
+
+/* ... your existing CSS ... */
+
+/* Style for the curved containers */
+.curved-container {
+    
+    background-color: #3498db; /* Background color of the containers */
+    color: #fff; /* Text color */
+    border-radius: 25px; /* Curved vertices */
+    padding: 20px; /* Add padding inside the containers */
+    margin: 20px; /* Add margin around the containers */
+    text-align: center; /* Center text horizontally */
+}
+/* Parent container for the curved containers */
+.container2 {
+    text-align: center; /* Center the inline-block elements horizontally */
+    margin-top: 20px; /* Add margin at the top if needed */
+}
+
+/* Style for the curved containers */
+.curved-containers {
+    display: inline-block; /* Use Flexbox to arrange child divs */
+}
+.curved-container {
+    display:inline-block; /*Display the containers inline */
+    width: 350px;
+    height:350px;
+     background-color: #fff;/* background */
+    color: #fff; /* Text color */
+    border-radius: 25px; /* Curved vertices */
+    padding: 20px; /* Add padding inside the containers */
+    text-align: center; /* Center text horizontally */
+    margin-right: 20px; /* Add margin to create spacing between containers */
+}
+
+/* Remove the right margin from the last container */
+.curved-container:last-child {
+    margin-right: 0;
+}
+/* add color gradient to first .container */
+#first-container{
+    background: linear-gradient(140deg, #392ddb, #fc29e0);
+}
+#second-container{
+    
+    /* Border-Styles */
+    border:2px solid #333;
+    border-radius:25px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2)
+
+}
+.second-container-child{
+    background-image: url('images/e_cell.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    height:340px;
+
+    border-radius: 50%;
+}
+#third-container{
+    border: 2px solid #333;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius:25px;
+    margin-right:20px;
+}
+/* Media query for responsiveness on smaller screens (phones) */
+/* ... Your existing CSS ... */
+
+/* Media query for responsiveness on smaller screens (phones) */
+
+
+    /* Style for the third container on smaller screens */
+    #third-container {
+        margin-right: 0; /* Remove right margin for better spacing */
+    }
+@media screen and (min-width: 480px) and (max-width: 1300px){
+    
+     #first-container{
+         margin: 20px 20px;
+         margin-right: 20px;
+         width: 90%;
+     }
+
+}
+
+#last{
+    background-color: red !important;
+}
+.third-container-child{
+    height : 100px;
+    width : 100px;
+    border : solid black;
+    margin-top: 8px ;
+    background-color: blue;
+}
+
+@media (max-width: 480px) {
+    /* Adjust container width and margins for smaller screens */
+    .navbar-links {
+        flex-direction: column; /* Stack the links vertically */
+        align-items: flex-start; /* Align links to the left */
+    }
+
+    .navbar-link {
+        margin: 5px 0; /* Add spacing between stacked links */
+    }
+    .curved-container {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    /* Adjust font size for better readability on smaller screens */
+    .navbar-link {
+        font-size: 16px; /* Adjust font size as needed */
+    }
+    /* Style for the second container's child on smaller screens */
+    #first-container{
+        margin-right: 0;
+    }
+    .second-container-child {
+        width: 100%; /* Use 100% width for better responsiveness */
+        height: 100%;
+        border-radius: 50%; /* Remove border radius on smaller screens */
+        background-size: cover; /* Cover the entire container with the background image */
+        background-repeat: no-repeat;
+        background-position: center; /* Center the background image */
+        
+    }
+
+    /* Style for the third container on smaller screens */
+    #third-container {
+        margin-right: 0; /* Remove right margin for better spacing */
+    }
+    .curved-container{
+        height: 176px;
+        width : 176px;
+    }
+    .third-container-child{
+    height : 50px;
+    width : 50px;
+    border : solid black;
+    margin-top: 4px ;
+   
+}
+
+}
